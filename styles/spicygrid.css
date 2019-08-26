@@ -14,7 +14,7 @@
 }
 @font-face {
   font-family: font2;
-  src: url(/assets/kalam.ttf);
+  src: url(/assets/mr.ttf);
 }
 body {
   font-family: font1;
@@ -229,7 +229,7 @@ header{
   width: 100%;
   padding: 2mm;
 }
-header>img{
+header>a>img{
   height: 8mm;
   width: auto;
 }
