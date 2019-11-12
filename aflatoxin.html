@@ -1,0 +1,253 @@
+<html>
+<head>
+  <title>Pure Scan AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#06090b">
+  <meta charset="utf-8">
+  <link rel="shortcut icon" type="image/png" href="/assets/icon.png"/>
+  <link rel="stylesheet" type="text/css" href="/styles/spicygrid.css"/>
+  <script>
+    function init(){
+      var links = document.querySelector('header nav').children;
+      for(var i=0;i<links.length;i++){
+        links[i].addEventListener('click',function(){
+          document.querySelector('input').checked=false;
+        });
+      }
+    }
+  </script>
+</head>
+<body onload="init()">
+  <img src="/assets/menuon.svg" style="display: none;">
+    
+  <header>
+    <a href="/index.html">
+      <img src="/assets/icon.png">
+    </a>
+    <input type="checkbox" id="menutoggle">
+    <label for="menutoggle"></label>
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/aflatoxin.html">Aflatoxin Solutions</a>
+      <a href="/about.html">About Us</a>
+      <a href="/careers.html">Careers</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  
+  <section class="grid1 acenter bgdark">
+    <div class="box1 bgdarker">
+      <h1 class="fgcolor">Aflatoxin Solutions</h1>
+    </div>
+  </section>
+  
+  <section class="grid2">
+    <div class="box1 fgdarker acenter" style="padding: 0;">
+      <img src="/assets/afl/aflatoxin.jpg" style="width: 100%;">
+    </div>
+    <div class="box1 ajustify">
+      <h2 class="fgcolor">What is Aflatoxin?</h2>
+      <p class="fgdarker">
+        Aflatoxin, a carcinogen, is produced in food infected by 
+        the fungus, <i>Aspergillus</i>. It is mostly found in maize, peanuts
+        and chillies.
+        Ingesting small quantities of the toxins over the long term can 
+        cause liver or at times lung cancer. (infographic with stats)
+      </p>
+    </div>
+  </section>
+  
+  
+  <section class="grid2">
+    <div class="box1 fgdarker" style="padding: 0; grid-area: 1 / 2 / 2 / 3;">
+      <img src="/assets/afl/product.jpg" style="width: 100%;">
+    </div>
+    <div class="box1 ajustify" style=" grid-area: 1 / 1 / 2 / 2;">
+      <h2 class="fgcolor">Our Aflatoxin Detection Technology</h2>
+      <p class="fgdarker aleft">
+        ⚫ Spectroscopic (UV) easy scan technology
+        <br>
+        ⚫ Non-destructive aflatoxin detection
+        <br>
+        ⚫ Low capital cost and negligible operational cost
+      </p>
+    </div>
+    
+  </section>
+  
+  <section class="grid2">
+    <div class="box1 fgdarker" style="padding: 0;">
+      <img src="/assets/afl/peanuts.jpg" style="width: 100%;">
+    </div>
+    <div class="box1 ajustify">
+      <h2 class="fgcolor">How does it work?</h2>
+      <p class="fgdarker aleft">
+        ⚫ Place sample in box to scan<br>
+        ⚫ Get results in 30 seconds<br>
+        ⚫ Portable device<br>
+        ⚫ Results can be viewed on any device 
+      </p>
+    </div>
+  </section>
+  
+  <section class="grid4 acenter bgcolor fglighter" style="padding: 10mm 0;">
+    <div class="box4">
+      <h2 class="fglighter" style="border: none;">Our Offerings</h2>
+    </div>
+    <div class="box1">
+      <img src="/assets/afl/product.jpg" style="width: 100%; border-radius: 1mm;">
+      <br>
+      <p style="font-family: font1; font-size: 110%;">Portable Scanning Device</p>
+    </div>
+    <div class="box1">
+      <img src="/assets/afl/conveyor.jpg" style="width: 100%; border-radius: 1mm;">
+      <br>
+      <p style="font-family: font1; font-size: 110%;">Custom Integrations</p>
+    </div>
+    <div class="box1">
+      <img src="/assets/afl/graded.jpg" style="width: 100%; border-radius: 1mm;">
+      <br>
+      <p style="font-family: font1; font-size: 110%;">Aflatoxin-free Material</p>
+    </div>
+    <div class="box1">
+      <img src="/assets/afl/lotsofcorn.jpg" style="width: 100%; border-radius: 1mm;">
+      <br>
+      <p style="font-family: font1; font-size: 110%;">Custom Procurements</p>
+    </div>
+  </section>
+  
+  
+  <section class="grid4 aleft" id="compare">
+    <style>
+      #compare{
+        padding: 5mm;
+        grid-gap: 5mm;
+      }
+      #compare span,h2{
+        color: var(--theme);
+      }
+      #compare>.box1{
+        margin: 5mm 0mm;
+        border-radius: 2mm;
+        border: 0.5mm solid var(--theme);
+      }
+      #psa span{
+        color: var(--light);
+      }
+    </style>
+    <div class="box4 acenter">
+      <h2 class="fgcolor">Compare (check numbers)</h2>
+    </div>
+    <div class="box1 fgcolor aright onlylarge" style="border-color: var(--light);">
+      <h2 class="fgcolor">Features</h2>
+      Equipment Cost
+      <br>
+      Test Cost
+      <br>
+      Test time
+      <br>
+      Accuracy
+      <br>
+      User Skill
+      <br>
+      Equipment Size
+      <br>
+      Ease of use
+      <br>
+      Technique
+    </div>
+    <div class="box1 bglighter">
+      <h2>ELISA</h2>
+      <span class="onlysmall">Equipment Cost: </span>₹100000 (~$1400)
+      <br>
+      <span class="onlysmall">Test Cost: </span>₹800/test (~$11)
+      <br>
+      <span class="onlysmall">Test time: </span>Few hours
+      <br>
+      <span class="onlysmall">Accuracy: </span>2 ppb
+      <br>
+      <span class="onlysmall">User Skill: </span>Technician required
+      <br>
+      <span class="onlysmall">Equipment Size: </span>Table-top, portable
+      <br>
+      <span class="onlysmall">Ease of use: </span>Laboratory required
+      <br>
+      <span class="onlysmall">Technique: </span>Wet biochemical
+    </div>
+    <div class="box1 bglighter">
+      <h2>HPLC</h2>
+      <span class="onlysmall">Equipment Cost: </span>₹600000 (~$8400)
+      <br>
+      <span class="onlysmall">Test Cost: </span>₹2500/test (~$35)
+      <br>
+      <span class="onlysmall">Test time: </span>Few hours
+      <br>
+      <span class="onlysmall">Accuracy: </span>2 ppb
+      <br>
+      <span class="onlysmall">User Skill: </span>Technician required
+      <br>
+      <span class="onlysmall">Equipment Size: </span>Table-top, non-portable
+      <br>
+      <span class="onlysmall">Ease of use: </span>Laboratory required
+      <br>
+      <span class="onlysmall">Technique: </span>Wet biochemical
+    </div>
+    <div class="box1 bgcolor" id="psa">
+      <h2 class="fglighter">Pure Scan AI</h2>
+      <span class="onlysmall">Equipment Cost: </span>₹50000 (~$700)
+      <br>
+      <span class="onlysmall">Test Cost: </span>₹8/test (~$0.11)
+      <br>
+      <span class="onlysmall">Test time: </span>30 seconds
+      <br>
+      <span class="onlysmall">Accuracy: </span>10 ppb
+      <br>
+      <span class="onlysmall">User Skill: </span>Anyone can use
+      <br>
+      <span class="onlysmall">Equipment Size: </span>Hand-held, portable
+      <br>
+      <span class="onlysmall">Ease of use: </span>Use Anywhere
+      <br>
+      <span class="onlysmall">Technique: </span>Dry, spectroscopic
+    </div>
+    
+  </section>
+  
+  <section class="grid4 acenter">
+    <div class="box1 onlylarge"></div>
+    <div class="box2 fgdarker">
+      <h2>Schedule a demo</h2>
+      It's free!
+    </div>
+    <div class="box1 onlylarge"></div>
+  </section>
+  
+  <section class="grid2 bgdarker fglighter acenter" id="contact">
+    <div class="box2 acenter">
+      <h1>Contact Us</h1>
+    </div>
+    <div class="box1">
+      <h3>
+        <img src="/assets/mail.svg">
+        Email
+      </h3>
+      <a href="mailto:hi@purescanai.com">hi@purescanai.com</a>
+    </div>
+    <div class="box1">
+      <h3>
+        <img src="/assets/phone.svg">
+        Phone
+      </h3>
+      Manasa: <a href="tel:+919087601224">+91 90876 01224</a><br>
+      Ayush: <a href="tel:+918851608479">+91 88516 08479</a>
+    </div>
+  </section>
+  <section class="grid1 bgdarker fgcolor acenter">
+    <div class="box1">
+      Website powered by 
+      <a href="https://wiosdesigns.xyz" target="_blank">
+        WIOS Designs
+      </a>
+  </section>
+</body>
+</html>

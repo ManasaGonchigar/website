@@ -1,0 +1,145 @@
+<html>
+<head>
+  <title>Pure Scan AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#06090b">
+  <meta charset="utf-8">
+  <link rel="shortcut icon" type="image/png" href="/assets/icon.png"/>
+  <link rel="stylesheet" type="text/css" href="/styles/spicygrid.css"/>
+  <script>
+    function init(){
+      var links = document.querySelector('header nav').children;
+      for(var i=0;i<links.length;i++){
+        links[i].addEventListener('click',function(){
+          document.querySelector('input').checked=false;
+        });
+      }
+    }
+  </script>
+</head>
+<body onload="init()">
+  <img src="/assets/menuon.svg" style="display: none;">
+    
+  <header>
+    <a href="/index.html">
+      <img src="/assets/icon.png">
+    </a>
+    <input type="checkbox" id="menutoggle">
+    <label for="menutoggle"></label>
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/aflatoxin.html">Aflatoxin Solutions</a>
+      <a href="/about.html">About Us</a>
+      <a href="/careers.html">Careers</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  
+  <section class="grid1 acenter bgdark">
+    <div class="box1 bgdarker">
+      <h1 class="fgcolor">About Us</h1>
+    </div>
+  </section>
+  
+  <section class="grid6 acenter" style="padding: 10mm 0;">
+    <div class="box1 onlylarge"></div>
+    <div class="box4 fgdarker">
+      We envision to the make food on our plate safe, one ingredient at a time. 
+      <br><br>
+      We leverage technology to help the players in the supply chain to make informed decisions about food safety. 
+    </div>
+    <div class="box1 onlylarge"></div>
+  </section>
+  
+  <section class="grid10 acenter bgcolor fglighter" id="peoples">
+    <style>
+      #peoples img{
+        border: none;
+      }
+    </style>
+    <div class="box1 onlylarge"></div>
+    <div class="box8">
+      <h2 class="fglighter">Team</h2>
+    </div>
+    <div class="box1 onlylarge"></div>
+    
+    <div class="box1 onlylarge"></div>
+    <div class="box2 fglighter">
+      <img src="/assets/team/ayush.jpg" style="width: 90%; border-radius: 50%;">
+      <h3>Ayush Nigam</h3>
+      Co-Founder & CMO<br>
+      B. Tech. IITM, Serial Social Entrepreneur
+    </div>
+    <div class="box2 fglighter">
+      <img src="/assets/team/manasa.jpg" style="width: 90%; border-radius: 50%;">
+      <h3>Manasa Gonchigar</h3>
+      Co-Founder & CEO<br>
+      B. Tech IITM, Physicist
+    </div>
+    <div class="box2 fglighter">
+      <img src="/assets/team/anshu.jpg" style="width: 90%; border-radius: 50%;">
+      <h3>Anshu Rathour</h3>
+      Market Research<br>
+      Hacker and Innovator
+    </div>
+    <div class="box2 fglighter">
+      <img src="/assets/team/aprajita.jpg" style="width: 90%; border-radius: 50%;">
+      <h3>Aprajita Morya</h3>
+      HR<br>
+      MBA, Delhi School of Economics
+    </div>
+    <div class="box1 onlylarge"></div>
+    
+    <div class="box2 onlylarge"></div>
+    <div class="box2 fglighter">
+      <img src="/assets/team/harshita.jpg" style="width: 90%; border-radius: 50%;">
+      <h3>Harshita Ojha</h3>
+      Biological Sciences<br>
+      BS/MS IITM
+    </div>
+    <div class="box2 fglighter">
+      <img src="/assets/team/sanjay.jpg" style="width: 90%; border-radius: 50%;">
+      <h3>Sanjay Gollamudi</h3>
+      Bio-Chemical Research<br>
+      B. Tech. IITM
+    </div>
+    <div class="box2 fglighter">
+      <img src="/assets/team/swapnil.jpg" style="width: 90%; border-radius: 50%;">
+      <h3>Swapnil Kumar</h3>
+      International Business<br>
+      M.S. Colorado University
+    </div>
+    <div class="box2 onlylarge"></div>
+    <br><br>
+    
+  </section>
+  
+  <section class="grid2 bgdarker acenter" id="contact">
+    <div class="box2 acenter">
+      <h1>Contact Us</h1>
+    </div>
+    <div class="box1">
+      <h3>
+        <img src="/assets/mail.svg">
+        Email
+      </h3>
+      <a href="mailto:hi@purescanai.com">hi@purescanai.com</a>
+    </div>
+    <div class="box1">
+      <h3>
+        <img src="/assets/phone.svg">
+        Phone
+      </h3>
+      Manasa: <a href="tel:+919087601224">+91 90876 01224</a><br>
+      Ayush: <a href="tel:+918851608479">+91 88516 08479</a>
+    </div>
+  </section>
+  <section class="grid1 bgdarker fgcolor acenter">
+    <div class="box1">
+      Website powered by 
+      <a href="https://wiosdesigns.xyz" target="_blank">
+        WIOS Designs
+      </a>
+  </section>
+</body>
+</html>

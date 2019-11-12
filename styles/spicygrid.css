@@ -1,8 +1,9 @@
 :root{
-  --darker: #06090b;
-  --dark: #090e11;
-  --theme: #0070bb;
-  --light: #e5f4ff;
+  --darker: #2f2e41;
+  --dark: #ecb200;
+  --theme: #15A89C;
+  /*--theme: #21bc9b;*/
+  --light: #fcfdff;
   --lighter: #ffffff;
 }
 * {
@@ -10,17 +11,22 @@
 }
 @font-face {
   font-family: font1;
-  src: url(/assets/jost.otf);
+  src: url(/assets/mr.ttf);
 }
 @font-face {
   font-family: font2;
-  src: url(/assets/mr.ttf);
+  src: url(/assets/vr.ttf);
+}
+html{
+  scroll-behavior: smooth;
 }
 body {
   font-family: font1;
+  line-height: 175%;
   padding: 0px;
+  padding-top: 15mm;
   margin: 0px;
-  font-size: 4mm;
+  font-size: 5.5mm;
   background: var(--light);
   color: var(--dark);
 }
@@ -131,18 +137,27 @@ img[class^="box"] {
 }
 h1,h2,h3 {
   font-family: font2;
-  font-weight: normal;
   margin: 5mm 0mm;
   padding: 0mm;
+  font-weight: normal;
 }
 h1{
-  font-size: 7mm;
+  font-size: 8mm;
+  /*text-transform: uppercase;*/
+  letter-spacing: 0.25mm;
+  font-weight: normal;
 }
 h2{
-  font-size: 6mm;
+  font-size: 7mm;
+  /*text-transform: uppercase;*/
+  letter-spacing: 0.25mm;
+  border-bottom: 0.4mm solid var(--dark);
+  padding-bottom: 2mm;
 }
 h3{
-  font-size: 5mm;
+  font-size: 6mm;
+  margin: 0;
+  margin-top: 2mm;
 }
 .bgdarker{
   background: var(--darker);
@@ -219,8 +234,7 @@ h3{
 
 
 header{
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-row-gap: 2mm;
@@ -230,7 +244,7 @@ header{
   padding: 2mm;
 }
 header>a>img{
-  height: 8mm;
+  height: 12mm;
   width: auto;
 }
 header>input{
@@ -240,7 +254,7 @@ header>label{
   display: inline-block;
   height: 6mm;
   width: 8mm;
-  margin: 1.5mm;
+  margin: 3mm 1.5mm;
   background: url(/assets/menuoff.svg);
   background-size: contain;
 }
@@ -281,11 +295,18 @@ header input:checked ~ nav{
     grid-column: span 1;
   }
   header>nav>a{
-    padding: 1mm 6mm;
+    padding: 2mm 6mm;
   }
 }
 
 @keyframes fadein{
   from{opacity: 0;}
   to{opacity: 1;}
+}
+
+#contact h3>img{
+  height: 7mm;
+  width: auto;
+  vertical-align: -1.5mm;
+  margin-right: 2mm;
 }
