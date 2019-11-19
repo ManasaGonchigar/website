@@ -151,8 +151,8 @@ h2{
   font-size: 7mm;
   /*text-transform: uppercase;*/
   letter-spacing: 0.25mm;
-  border-bottom: 0.4mm solid var(--dark);
-  padding-bottom: 2mm;
+  /*border-bottom: 0.4mm solid var(--dark);
+  padding-bottom: 2mm;*/
 }
 h3{
   font-size: 6mm;
